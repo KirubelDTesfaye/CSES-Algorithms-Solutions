@@ -8,29 +8,29 @@ vector<int> permutations(vector<int> arr,int n){
     bool check2 = true;
 	int j = 0;
     while(check2){
-		if(check == false && i == n){
-			check2 = false;
-			continue;
-		}else if (i == n && check == true){
-			i = 1;
-			check = false;
-			continue;
-		}else if(abs(arr[i]-arr[i-1]) == 1 && i != n-1){
-			if(abs(arr[i+1] - arr[i-1]) != 1)
-				swap(arr[i], arr[i+1]);
-			else if(i != 1){
-				swap(arr[i-2], arr[i-1]);
-			}
-			if(arr[i] == 2 && arr[i-1] == 3)
-				break;
-
-			check = true;
-		}else if (i == n-1 && abs(arr[i]-arr[i-1]) == 1){
-			swap(arr[i], arr[j++]);
-			check = true;
+	if(check == false && i == n){
+		check2 = false;
+		continue;
+	}else if (i == n && check == true){
+		i = 1;
+		check = false;
+		continue;
+	}else if(abs(arr[i]-arr[i-1]) == 1 && i != n-1){
+		if(abs(arr[i+1] - arr[i-1]) != 1)
+			swap(arr[i], arr[i+1]);
+		else if(i != 1){
+			swap(arr[i-2], arr[i-1]);
 		}
-		i++;
+		if(arr[i] == 2 && arr[i-1] == 3)
+			break;
+
+		check = true;
+	}else if (i == n-1 && abs(arr[i]-arr[i-1]) == 1){
+		swap(arr[i], arr[j++]);
+		check = true;
 	}
+	i++;
+     }
 
     return arr;
 }
@@ -56,7 +56,7 @@ int main(){
     }
 
 
-	vector<int> newArr;
+    vector<int> newArr;
     newArr = permutations(arr,n);
 
 	cout<<endl;
