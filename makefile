@@ -24,6 +24,8 @@ check:
 	chmod +x check.sh
 	./check.sh
 
+distcheck:
+	gcc --version
 clean:
 	rm problem1/weirdAlg
 	rm problem2/missingNumber
