@@ -26,4 +26,4 @@ Output:
 
 
 Here is the link to the problem Enjoy!
-https://cses.fi/problemset/task/1068/
+	https://cses.fi/problemset/task/1068/
