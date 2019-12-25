@@ -1,3 +1,4 @@
+#!/bin/sh
 output: problem1/weirdAlg.o problem2/missingNumber.o problem3/Repetitions.o problem4/increasingArray.o problem5/permutations.o problem6/numberSpiral.o
 	
 problem1/weirdAlg.o: problem1/weirdAlg.cpp
@@ -18,6 +19,10 @@ problem5/permutations.o: problem5/permutations.cpp
 problem6/numberSpiral.o: problem6/numberSpiral.cpp
 	g++ -std=c++11 -o2 -c problem6/numberSpiral.cpp -o problem6/numberSpiral
 	
+
+check:
+	chmod +x check.sh
+	./check.sh
 
 clean:
 	rm problem1/weirdAlg
