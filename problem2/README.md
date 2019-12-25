@@ -11,15 +11,16 @@ Output
 Print the missing number.
 
 Constraints
-2 ≤ n ≤2⋅105
+    2 ≤ n ≤2⋅105
+
 Example
 
 Input:
-5
-2 3 1 5
+    5
+    2 3 1 5
 
 Output:
-4
+    4
 
 
 
