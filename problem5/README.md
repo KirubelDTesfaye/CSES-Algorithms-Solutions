@@ -27,3 +27,6 @@ Input:
 
 Output:
 NO SOLUTION
+
+Link to problem
+	https://cses.fi/problemset/task/1070
