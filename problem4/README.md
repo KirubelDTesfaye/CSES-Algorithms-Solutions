@@ -24,3 +24,7 @@ Input:
 
 Output:
 	5
+
+
+Link to problem
+	https://cses.fi/problemset/task/1094
