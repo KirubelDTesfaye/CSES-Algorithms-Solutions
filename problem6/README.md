@@ -13,17 +13,22 @@ Output
 For each test, print the number in row y and column x.
 
 Constraints
-1≤t≤105
-1≤y,x≤109
+    1≤t≤105
+    1≤y,x≤109
+
 Example
 
 Input:
-3
-2 3
-1 1
-4 2
+    3
+    2 3
+    1 1
+    4 2
 
 Output:
-8
-1
-15
+    8
+    1
+    15
+
+
+Link to problem
+    https://cses.fi/problemset/task/1071
