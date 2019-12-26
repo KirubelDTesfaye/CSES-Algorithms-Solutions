@@ -1,23 +1,23 @@
 #!/bin/sh
-output: problem1/weirdAlg.o problem2/missingNumber.o problem3/Repetitions.o problem4/increasingArray.o problem5/permutations.o problem6/numberSpiral.o
+output: 1_weirdAlg/weirdAlg.o 2_missingNumber/missingNumber.o 3_missingNumber/Repetitions.o 4_increasingArray/increasingArray.o 5_permutations/permutations.o 6_numberSpiral/numberSpiral.o
 	
-problem1/weirdAlg.o: problem1/weirdAlg.cpp
-	g++ -std=c++11 -o2 -c problem1/weirdAlg.cpp -o problem1/weirdAlg
+1_weirdAlg/weirdAlg.o: 1_weirdAlg/weirdAlg.cpp
+	g++ -std=c++11 -o2 -c 1_weirdAlg/weirdAlg.cpp -o 1_weirdAlg/weirdAlg
 	
-problem2/missingNumber.o: problem2/missingNumber.cpp
-	g++ -std=c++11 -o2 -c problem2/missingNumber.cpp -o problem2/missingNumber
+2_missingNumber/missingNumber.o: 2_missingNumber/missingNumber.cpp
+	g++ -std=c++11 -o2 -c 2_missingNumber/missingNumber.cpp -o 2_missingNumber/missingNumber
 	
-problem3/Repetitions.o: problem3/Repetitions.cpp
-	g++ -std=c++11 -o2 -c problem3/Repetitions.cpp -o problem3/Repetitions
+3_missingNumber/Repetitions.o: 3_Repetition/Repetitions.cpp
+	g++ -std=c++11 -o2 -c 3_Repetition/Repetitions.cpp -o 3_Repetition/Repetitions
 	
-problem4/increasingArray.o: problem4/increasingArray.cpp
-	g++ -std=c++11 -o2 -c problem4/increasingArray.cpp -o problem4/increasingArray
+4_increasingArray/increasingArray.o: 4_increasingArray/increasingArray.cpp
+	g++ -std=c++11 -o2 -c 4_increasingArray/increasingArray.cpp -o 4_increasingArray/increasingArray
 	
-problem5/permutations.o: problem5/permutations.cpp
-	g++ -std=c++11 -o2 -c problem5/permutations.cpp -o problem5/permutations
+5_permutations/permutations.o: 5_permutations/permutations.cpp
+	g++ -std=c++11 -o2 -c 5_permutations/permutations.cpp -o 5_permutations/permutations
 	
-problem6/numberSpiral.o: problem6/numberSpiral.cpp
-	g++ -std=c++11 -o2 -c problem6/numberSpiral.cpp -o problem6/numberSpiral
+6_numberSpiral/numberSpiral.o: 6_numberSpiral/numberSpiral.cpp
+	g++ -std=c++11 -o2 -c 6_numberSpiral/numberSpiral.cpp -o 6_numberSpiral/numberSpiral
 	
 
 check:
@@ -27,9 +27,9 @@ check:
 distcheck:
 	gcc --version
 clean:
-	rm problem1/weirdAlg
-	rm problem2/missingNumber
-	rm problem3/Repetitions
-	rm problem4/increasingArray
-	rm problem5/permutations
-	rm problem6/numberSpiral
+	rm 1_weirdAlg/weirdAlg
+	rm 2_missingNumber/missingNumber
+	rm 3_missingNumber/Repetitions
+	rm 4_increasingArray/increasingArray
+	rm 5_permutations/permutations
+	rm 6_numberSpiral/numberSpiral

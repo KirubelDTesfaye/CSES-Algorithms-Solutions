@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FILE="problem1/weirdAlg problem2/missingNumber problem3/Repetitions problem4/increasingArray
-        problem5/permutations problem6/numberSpiral"
+FILE="1_weirdAlg/weirdAlg 2_missingNumber/missingNumber 3_Repetition/Repetitions 4_increasingArray/increasingArray
+        5_permutations/permutations 6_numberSpiral/numberSpiral"
 
 for x in $FILE
 do
