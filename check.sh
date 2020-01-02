@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FILE="1_weirdAlg/weirdAlg 2_missingNumber/missingNumber 3_Repetition/Repetitions 4_increasingArray/increasingArray
-        5_permutations/permutations 6_numberSpiral/numberSpiral"
+        5_permutations/permutations 6_numberSpiral/numberSpiral 8_bitStrings/bitStrings"
 
 for x in $FILE
 do
