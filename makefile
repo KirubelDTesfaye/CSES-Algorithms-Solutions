@@ -1,7 +1,6 @@
 #!/bin/sh
 output: 1_weirdAlg/weirdAlg.o 2_missingNumber/missingNumber.o 3_Repetition/Repetitions.o 4_increasingArray/increasingArray.o 5_permutations/permutations.o 6_numberSpiral/numberSpiral.o 8_twoSets/twoSets.o  9_bitStrings/bitStrings.o 10_trailingZeros/trailingZeros.o
 
-	
 1_weirdAlg/weirdAlg.o: 1_weirdAlg/weirdAlg.cpp
 	g++ -std=c++11 -o2 -c 1_weirdAlg/weirdAlg.cpp -o 1_weirdAlg/weirdAlg
 	
@@ -27,7 +26,7 @@ output: 1_weirdAlg/weirdAlg.o 2_missingNumber/missingNumber.o 3_Repetition/Repet
 9_bitStrings/bitStrings.o: 9_bitStrings/bitStrings.cpp
 	g++ -std=c++11 -o2 -c 9_bitStrings/bitStrings.cpp -o 9_bitStrings/bitStrings
 
-10_trailingZeros/trailingZeros.o: 10_trailingzeros/trailingZeros.cpp
+10_trailingZeros/trailingZeros.o: 10_trailingZeros/trailingZeros.cpp
 	g++ -std=c++11 -o2 -c 10_trailingZeros/trailingZeros.cpp -o 10_trailingZeros/trailingZeros
 	
 check:
